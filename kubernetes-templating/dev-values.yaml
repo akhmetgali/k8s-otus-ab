@@ -1,0 +1,23 @@
+listeners:
+  client:
+    protocol: "PLAINTEXT"
+
+listeners:
+  controller:
+    protocol: "PLAINTEXT"
+
+listeners:
+  interbroker:
+    protocol: "PLAINTEXT"
+
+controller:
+  replicaCount: 1
+
+broker:
+  replicaCount: 1
+
+externalAccess:
+  enabled: false
+
+image:
+  tag: latest
