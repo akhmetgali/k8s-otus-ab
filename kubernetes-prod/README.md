@@ -34,3 +34,10 @@ kube-system    kube-controller-manager-master   1/1     Running   0             
 kube-system    kube-proxy-hvh2d                 1/1     Running   0               13m
 kube-system    kube-scheduler-master            1/1     Running   0               13m
 ```
+
+## Upgrade
+
+1. Copy file `/etc/kubernetes/admin.conf` from master to each worker node
+2. run `upgrade_master.sh` on master node
+3. run `uprgrade_worker.sh` on each worker node
+4. check your cluster with `kubectl get no -o wide`
